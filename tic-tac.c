@@ -17,7 +17,7 @@ int main()
         board();
         Joueur = (Joueur % 2) ? 1 : 2;
 
-        printf("Joueur %d, entrer un nombre :  ", Joueur);
+        printf("Player %d, enter a number :  ", Joueur);
         scanf("%d", &choix);
 
         mark = (Joueur == 1) ? 'X' : 'O';
@@ -51,7 +51,7 @@ int main()
             
         else
         {
-            printf("Vous pouvez pas remplir une case qui est prit deja essayer une autre case ");
+            printf("You cannot fill a box which is already taken try another box ");
 
             Joueur--;
             getch();
@@ -64,9 +64,9 @@ int main()
     board();
     
     if (i == 1)
-        printf("==>\a************Joueur  %d gagne bravo************** ", --Joueur);
+        printf("==>\a************Player  %d well done************** ", --Joueur);
     else
-        printf("==>\a************Aucun de vous a gagner************** ");
+        printf("==>\a************None of you win************** ");
 
     getch();
 
@@ -75,10 +75,10 @@ int main()
 
 /*********************************************
 
-Pour comprendre a quoi sert les retours 
-1 Pour la fin du jeu avec resultat
--1 le jeu est encore en progres
-O C'est la fin du jeu sans resultat
+To understand what returns are for
+1 For the end of the game with result
+-1 the game is still in progress
+O It's the end of the game without result
  **********************************************/
 
 int checkwin()
@@ -118,7 +118,7 @@ int checkwin()
 
 
 /*******************************************************************
-Procedure pour afficher le tableau qu'on va remplir pour jouer
+Procedure to display the table that we will fill to play
  ********************************************************************/
 
 
@@ -126,14 +126,10 @@ void board()
 {
     system("cls");
    puts("-----------------------------------------");
-   printf("Programme realise par : Monssif khalil -- Zakaria hassari\n",130);
-   puts("Filière : Technique de developpement informatique *** Groupe : TDI 101");
-   printf("PROMOTION  : 2019-2020\n", 130);
-   puts("Nom de l'enseignant : MAdame meriam mahdaoui");
-   puts("Projet : Jeu Tic-tac-toe");
+   printf("Program produced by : @riyadelmahfoudi \n",130);
    puts("-----------------------------------------\n\n");
 
-    printf("Joueur 1 (X)  -  Joueur 2 (O)\n\n\n");
+    printf("Player 1 (X)  -  Player 2 (O)\n\n\n");
 
 
     printf("     |     |     \n");
